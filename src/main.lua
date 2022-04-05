@@ -3,6 +3,11 @@ local console = {}
 rconsoleclear()
 rconsolename("Console")
 
+--> To keep the console. formfactor!
+function console.clear()
+    rconsoleclear()
+end
+
 function console.log(text)
     rconsoleprint(text .. "\n")
 end
