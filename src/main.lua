@@ -20,7 +20,7 @@ function console.error(text)
 end
 
 function console.info(text)
-    rconsoleprint("@@BLUE@@")
+    rconsoleprint("@@LIGHT_BLUE@@")
     rconsoleprint(text .. "\n")
     rconsoleprint("@@WHITE@@")
 end
