@@ -1,11 +1,15 @@
 local console = {}
+
 --> Setup Console
 rconsoleclear()
 rconsolename("Console")
 
 --> some stuff are just literally putting shit into a diff function.
-function console.log(text)
+function console.log(text, color)
+    local color = color or "white"
+    rconsoleprint("@@" .. string.upper(color) .. "@@")
     rconsoleprint(text .. "\n")
+    rconsoleprint("@@WHITE@@")
 end
 
 function console.warn(text)
@@ -26,6 +30,7 @@ function console.info(text)
     rconsoleprint("@@WHITE@@")
 end
 
+--> Deprecated, keeping just encase.
 function console:Color(color)
     rconsoleprint("@@" .. string.upper(color) .. "@@") 
 end
