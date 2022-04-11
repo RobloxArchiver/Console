@@ -3,11 +3,7 @@ local console = {}
 rconsoleclear()
 rconsolename("Console")
 
---> To keep the console. formfactor!
-function console.clear()
-    rconsoleclear()
-end
-
+--> some stuff are just literally putting shit into a diff function.
 function console.log(text)
     rconsoleprint(text .. "\n")
 end
@@ -31,7 +27,15 @@ function console.info(text)
 end
 
 function console:Color(color)
-    rconsoleprint("@@" .. color .. "@@")
+    rconsoleprint("@@" .. string.upper(color) .. "@@") 
+end
+
+function console:Clear()
+    rconsoleclear()
+end
+
+function console:Name(text)
+    rconsolename(text)
 end
 
 return console
