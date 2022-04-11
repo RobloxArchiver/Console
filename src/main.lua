@@ -30,6 +30,10 @@ function console.info(text)
     rconsoleprint("@@WHITE@@")
 end
 
+function console.n()
+    rconsoleprint("\n")
+end
+
 --> Deprecated, keeping just encase.
 function console:Color(color)
     rconsoleprint("@@" .. string.upper(color) .. "@@") 
