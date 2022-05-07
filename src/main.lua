@@ -1,50 +1,44 @@
-local console = {}
+---@diagnostic disable: undefined-global
 
---> Setup Console
-rconsoleclear()
-rconsolename("Console")
+local Console = {}
 
---> some stuff are just literally putting shit into a diff function.
-function console.log(text, color)
-    local color = color or "white"
-    rconsoleprint("@@" .. string.upper(color) .. "@@")
-    rconsoleprint(text .. "\n")
-    rconsoleprint("@@WHITE@@")
-end
+if rconsoleprint then    
+    function Console:Init(clear, consoleName)
+        local consoleName = consoleName or "Console";
+        rconsolename(consoleName);
 
-function console.warn(text)
-    rconsoleprint("@@YELLOW@@")
-    rconsoleprint(text .. "\n")
-    rconsoleprint("@@WHITE@@")
-end
+        if clear == true then
+            rconsoleclear();
+        end;
 
-function console.error(text)
-    rconsoleprint("@@RED@@")
-    rconsoleprint(text .. "\n")
-    rconsoleprint("@@WHITE@@")
-end
+        local console = {}
 
-function console.info(text)
-    rconsoleprint("@@LIGHT_BLUE@@")
-    rconsoleprint(text .. "\n")
-    rconsoleprint("@@WHITE@@")
-end
+        function console.log(text, color)
+            rconsoleprint("@@" .. string.upper(color) .. "@@");
+            rconsoleprint(text .. "\n");
+            rconsoleprint("@@WHITE@@");
+        end;
 
-function console.n()
-    rconsoleprint("\n")
-end
+        function console.warn(text)
+            rconsoleprint("@@YELLOW@@");
+            rconsoleprint("Warning: " .. text .. "\n");
+            rconsoleprint("@@WHITE@@");
+        end;
 
---> Deprecated, keeping just encase.
-function console:Color(color)
-    rconsoleprint("@@" .. string.upper(color) .. "@@") 
-end
+        function console.info(text)
+            rconsoleprint("@@LIGHT_BLUE@@");
+            rconsoleprint("Info: " .. text .. "\n");
+            rconsoleprint("@@WHITE@@");
+        end;
 
-function console:Clear()
-    rconsoleclear()
-end
+        function console.error(text)
+            rconsoleprint("@@RED@@");
+            rconsoleprint("Error: " .. text .. "\n");
+            rconsoleprint("@@WHITE@@");
+        end;
 
-function console:Name(text)
-    rconsolename(text)
-end
+        return console;
+    end;
+end;
 
-return console
+return Console;
