@@ -1,7 +1,7 @@
 # Rewrite
 Rewritten 5/7/2022
 # Documentation
-### `library:Init(clear, consoleName)`
+## `library:Init(clear, consoleName)`
 **Method**
 
 | Arguments     | Usage                         | Type   | Default   | Optional |
@@ -9,23 +9,23 @@ Rewritten 5/7/2022
 | clear         | Clears console when executed. | Bool   | **N/A**   | ❌      |
 | consoleName   | Sets Console Name             | String | "Console" | ✔️      |
 
-### `console.log(text, color)`
-| Arguments | Usage               | Type   | Default   | Optional |
-| --------- | ------------------- | ------ | --------- | -------- |
-| text      | Sets the Text Used. | String | **N/A**   | ❌      |
-| color     | Sets the Color.     | String | "WHITE"   | ✔️      |
+## `console.log(text, color)`
+| Arguments | Usage                                                                                           | Type   | Default   | Optional |
+| --------- | ----------------------------------------------------------------------------------------------- | ------ | --------- | -------- |
+| text      | Sets the Text Used.                                                                             | String | **N/A**   | ❌      |
+| color     | Sets the Color. [List of Colors Available](https://github.com/RobloxArchiver/Console#colors)    | String | "WHITE"   | ✔️      |
 
-### `console.warn(text)`
-| Arguments | Usage               | Type   | Default   | Optional |
-| --------- | ------------------- | ------ | --------- | -------- |
-| text      | Sets the Text Used. | String | **N/A**   | ❌      |
-
-### `console.info(text)`
+## `console.warn(text)`
 | Arguments | Usage               | Type   | Default   | Optional |
 | --------- | ------------------- | ------ | --------- | -------- |
 | text      | Sets the Text Used. | String | **N/A**   | ❌      |
 
-### `console.error(text)`
+## `console.info(text)`
+| Arguments | Usage               | Type   | Default   | Optional |
+| --------- | ------------------- | ------ | --------- | -------- |
+| text      | Sets the Text Used. | String | **N/A**   | ❌      |
+
+## `console.error(text)`
 | Arguments | Usage               | Type   | Default   | Optional |
 | --------- | ------------------- | ------ | --------- | -------- |
 | text      | Sets the Text Used. | String | **N/A**   | ❌      |
