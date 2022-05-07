@@ -33,8 +33,15 @@ Rewritten 5/7/2022
 # Starting
 To begin add this to the top of your script. 
 ```lua
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxArchiver/Console/main/src/main.lua")();
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxArchiver/Console/main/src/main.lua"))();
 local console = library:Init(true, "Test!"); --> You can keep the 2nd arg empty, it'll default to "Console."
+
+console.log("Test", "blue");
+```
+
+Optionally to keep the loader in one line feel free to use it like this.
+```lua
+local console = loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxArchiver/Console/main/src/main.lua"))():Init(true, "Test!");
 
 console.log("Test", "blue");
 ```
