@@ -47,7 +47,7 @@ console.log("Test", "blue");
 ```
 
 # Colors
-Taken out of Synapse X Documentation
+Taken out of Synapse X Documentation Note: No need to capitalize as show in docs, it is handled for you! 
 
-Note: No need to capitalize. 
+
 ![The Colors](image.png)
