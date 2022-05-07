@@ -1,5 +1,3 @@
----@diagnostic disable: undefined-global
-
 local Console = {}
 
 if rconsoleprint then    
