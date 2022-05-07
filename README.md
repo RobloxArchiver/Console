@@ -1,7 +1,7 @@
 # Rewrite
 Rewritten 5/7/2022
 # Documentation
-### library:Init(clear, consoleName)
+### `library:Init(clear, consoleName)`
 **Method**
 
 | Arguments     | Usage                         | Type   | Default   | Optional |
@@ -9,23 +9,23 @@ Rewritten 5/7/2022
 | clear         | Clears console when executed. | Bool   | **N/A**   | ❌      |
 | consoleName   | Sets Console Name             | String | "Console" | ✔️      |
 
-### 1console.log(text, color)1
+### `console.log(text, color)`
 | Arguments | Usage               | Type   | Default   | Optional |
 | --------- | ------------------- | ------ | --------- | -------- |
 | text      | Sets the Text Used. | String | **N/A**   | ❌      |
 | color     | Sets the Color.     | String | "WHITE"   | ✔️      |
 
-### 1console.warn(text)1
+### `console.warn(text)`
 | Arguments | Usage               | Type   | Default   | Optional |
 | --------- | ------------------- | ------ | --------- | -------- |
 | text      | Sets the Text Used. | String | **N/A**   | ❌      |
 
-### 1console.info(text)1
+### `console.info(text)`
 | Arguments | Usage               | Type   | Default   | Optional |
 | --------- | ------------------- | ------ | --------- | -------- |
 | text      | Sets the Text Used. | String | **N/A**   | ❌      |
 
-### 1console.error(text)1
+### `console.error(text)`
 | Arguments | Usage               | Type   | Default   | Optional |
 | --------- | ------------------- | ------ | --------- | -------- |
 | text      | Sets the Text Used. | String | **N/A**   | ❌      |
