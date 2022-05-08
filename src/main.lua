@@ -12,7 +12,9 @@ if rconsoleprint then
         local console = {}
 
         function console.log(text, color)
-            rconsoleprint("@@" .. string.upper(color) .. "@@");
+            local color = color or "WHITE"; 
+            
+            rconsoleprint("@@" .. string.upper(tostring(color)) .. "@@");
             rconsoleprint(text .. "\n");
             rconsoleprint("@@WHITE@@");
         end;
