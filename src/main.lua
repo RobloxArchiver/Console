@@ -10,7 +10,7 @@ if rconsoleprint then
         end;
 
         local console = {}
-
+        
         function console.log(text, color)
             local color = color or "WHITE"; 
             
@@ -35,6 +35,18 @@ if rconsoleprint then
             rconsoleprint("@@RED@@");
             rconsoleprint("Error: " .. text .. "\n");
             rconsoleprint("@@WHITE@@");
+        end;
+        
+        function console:clear(clearMessage, color, crename)
+            local clearMessage = clearMessage or nil;
+            local crename = crename or consoleName;
+            local color = color or "white";
+            
+            rconsoleclear();
+            rconsoleclear();
+            
+            rconsolename(crename);
+            console.log(clearMessage, color);
         end;
 
         return console;
