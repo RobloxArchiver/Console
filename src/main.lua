@@ -53,8 +53,8 @@ if rconsoleprint then
             rconsoleclear();
             rconsoleclear();
             
-            rconsolename(crename);
-            console.log(clearMessage, color);
+            rconsolename(clearArgs.crename);
+            console.log(clearArgs.clearMessage, clearArgs.color);
         end;
 
         return console;
