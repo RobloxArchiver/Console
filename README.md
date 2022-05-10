@@ -15,8 +15,16 @@ Rewritten 5/7/2022
 | Arguments    | Usage                                                                                                             | Type   | Default               | Optional | 
 | ------------ | ----------------------------------------------------------------------------------------------------------------- | ------ | --------------------- | -------- |
 | clearMessage | Message sent when console is cleared.                                                                             | String | `nil`                 | ✔️      |
-| Color        | Color for the new message created. [List of Colors Available](https://github.com/RobloxArchiver/Console#colors)   | String | White                 | ✔️      |
-| CRename      | Renames console.                                                                                                  | String | Default (ConsoleName) | ✔️      |
+| color        | Color for the new message created. [List of Colors Available](https://github.com/RobloxArchiver/Console#colors)   | String | White                 | ✔️      |
+| crename      | Renames console.                                                                                                  | String | Default (ConsoleName) | ✔️      |
+
+```lua
+console:clear({
+    crename = "Renamed!";
+    clearMessage = "I love you";
+    color = "red";
+})
+```
 
 ## `console.log(text, color)`
 **Function**
