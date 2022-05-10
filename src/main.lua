@@ -37,10 +37,18 @@ if rconsoleprint then
             rconsoleprint("@@WHITE@@");
         end;
         
-        function console:clear(clearMessage, color, crename)
-            local clearMessage = clearMessage or nil;
-            local crename = crename or consoleName;
-            local color = color or "white";
+        function console:clear(clearArgs)
+            if clearArgs.clearMessage then
+                local clearMessage = clearArgs.clearMessage or "";
+            end;
+            
+            if clearArgs.crename then
+                crename = clearArgs.crename or consoleName;
+            end;
+            
+            if clearArgs.color then
+                local color = clearArgs.color or "white";
+            end;
             
             rconsoleclear();
             rconsoleclear();
