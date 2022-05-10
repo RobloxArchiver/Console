@@ -9,6 +9,13 @@ Rewritten 5/7/2022
 | clear         | Clears console when executed. | Bool   | **N/A**   | ❌      |
 | consoleName   | Sets Console Name             | String | "Console" | ✔️      |
 
+## `console:clear(clearMessage, color, crename)`
+| Arguments    | Usage                                                                                                             | Type   | Default               | Optional | 
+| ------------ | ----------------------------------------------------------------------------------------------------------------- | ------ | --------------------- | -------- |
+| clearMessage | Message sent when console is cleared.                                                                             | String | `nil`                 | ✔️      |
+| Color        | Color for the new message created. [List of Colors Available](https://github.com/RobloxArchiver/Console#colors)   | String | White                 | ✔️      |
+| CRename      | Renames console.                                                                                                  | String | Default (ConsoleName) | ✔️      |
+
 ## `console.log(text, color)`
 | Arguments | Usage                                                                                           | Type   | Default   | Optional |
 | --------- | ----------------------------------------------------------------------------------------------- | ------ | --------- | -------- |
