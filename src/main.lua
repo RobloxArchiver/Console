@@ -2,7 +2,7 @@ local Console = {}
 
 if rconsoleprint then    
     function Console:Init(clear, consoleName)
-        local consoleName = consoleName or "Console";
+        consoleName = consoleName or "Console";
         rconsolename(consoleName);
 
         if clear == true then
