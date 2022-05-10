@@ -9,7 +9,7 @@ Rewritten 5/7/2022
 | clear         | Clears console when executed. | Bool   | **N/A**   | ❌      |
 | consoleName   | Sets Console Name             | String | "Console" | ✔️      |
 
-## `console:clear(clearMessage, color, crename)`
+## `console:clear(clearMessage, color, crename)` **`DEPRECATED`**
 **Method**
 
 | Arguments    | Usage                                                                                                             | Type   | Default               | Optional | 
