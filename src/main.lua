@@ -37,26 +37,18 @@ if rconsoleprint then
             rconsoleprint("@@WHITE@@");
         end;
         
-        --/ Deprecated until fix is found
-        --/ function console:clear(clearArgs)
-        --/     if clearArgs.clearMessage then
-        --/         local clearMessage = clearArgs.clearMessage or "";
-        --/     end;
-        --/     
-        --/     if clearArgs.crename then
-        --/         crename = clearArgs.crename or consoleName;
-        --/     end;
-        --/     
-        --/     if clearArgs.color then
-        --/         local color = clearArgs.color or "white";
-        --/     end;
-        --/     
-        --/     rconsoleclear();
-        --/     rconsoleclear();
-        --/     
-        --/     rconsolename(clearArgs.crename);
-        --/     console.log(clearArgs.clearMessage, clearArgs.color);
-        --/ end;
+        function console:clear(clear)
+            rconsoleclear();
+            rconsoleclear();
+            
+            if clear.consolerename then
+                rconsolename(clear.consolerename);
+            end;
+
+            if clear.clearMessage then
+                console.log(clear.clearMessage);
+            end;
+        end;
 
         return console;
     end;
