@@ -11,7 +11,7 @@ Note: If name is not chosen, the console will be named "Console".
 | clear         | Clears console when executed. | Bool   | 
 | consoleName   | Sets Console Name             | String |
 
-## `console:clear(clearMessage, color, crename)` **`DEPRECATED`**
+## `console:clear(table)`
 **Method**
 
 | Arguments     | Usage                                                                                                             | Type   |
