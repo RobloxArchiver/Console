@@ -4,56 +4,58 @@ Rewritten 5/7/2022
 ## `library:Init(clear, consoleName)`
 **Method**
 
-| Arguments     | Usage                         | Type   | Default   | Optional |
-| ------------- | ----------------------------- | ------ | --------- | -------- |
-| clear         | Clears console when executed. | Bool   | **N/A**   | ❌      |
-| consoleName   | Sets Console Name             | String | "Console" | ✔️      |
+Note: If name is not chosen, the console will be named "Console".
+
+| Arguments     | Usage                         | Type   |
+| ------------- | ----------------------------- | ------ |
+| clear         | Clears console when executed. | Bool   | 
+| consoleName   | Sets Console Name             | String |
 
 ## `console:clear(clearMessage, color, crename)` **`DEPRECATED`**
 **Method**
 
-| Arguments    | Usage                                                                                                             | Type   | Default               | Optional | 
-| ------------ | ----------------------------------------------------------------------------------------------------------------- | ------ | --------------------- | -------- |
-| clearMessage | Message sent when console is cleared.                                                                             | String | `nil`                 | ✔️      |
-| color        | Color for the new message created. [List of Colors Available](https://github.com/RobloxArchiver/Console#colors)   | String | White                 | ✔️      |
-| crename      | Renames console.                                                                                                  | String | Default (ConsoleName) | ✔️      |
+| Arguments     | Usage                                                                                                             | Type   |
+| ------------  | ----------------------------------------------------------------------------------------------------------------- | ------ |
+| clearMessage  | Message sent when console is cleared.                                                                             | String |
+| consolerename | Renames console.                                                                                                  | String |
 
 ```lua
 console:clear({
-    crename = "Renamed!";
+    consolerename = "Renamed!";
     clearMessage = "I love you";
-    color = "red";
 })
 ```
 
 ## `console.log(text, color)`
 **Function**
 
-| Arguments | Usage                                                                                           | Type   | Default   | Optional |
-| --------- | ----------------------------------------------------------------------------------------------- | ------ | --------- | -------- |
-| text      | Sets the Text Used.                                                                             | String | **N/A**   | ❌      |
-| color     | Sets the Color. [List of Colors Available](https://github.com/RobloxArchiver/Console#colors)    | String | "WHITE"   | ✔️      |
+Note: Color is optional.
+
+| Arguments | Usage                                                                                           | Type   | 
+| --------- | ----------------------------------------------------------------------------------------------- | ------ | 
+| text      | Sets the Text Used.                                                                             | String | 
+| color     | Sets the Color. [List of Colors Available](https://github.com/RobloxArchiver/Console#colors)    | String | 
 
 ## `console.warn(text)`
 **Function**
 
-| Arguments | Usage               | Type   | Default   | Optional |
-| --------- | ------------------- | ------ | --------- | -------- |
-| text      | Sets the Text Used. | String | **N/A**   | ❌      |
+| Arguments | Usage               | Type   | 
+| --------- | ------------------- | ------ | 
+| text      | Sets the Text Used. | String | 
 
 ## `console.info(text)`
 **Function**
 
-| Arguments | Usage               | Type   | Default   | Optional |
-| --------- | ------------------- | ------ | --------- | -------- |
-| text      | Sets the Text Used. | String | **N/A**   | ❌      |
+| Arguments | Usage               | Type   |
+| --------- | ------------------- | ------ |
+| text      | Sets the Text Used. | String |
 
 ## `console.error(text)`
 **Function**
 
-| Arguments | Usage               | Type   | Default   | Optional |
-| --------- | ------------------- | ------ | --------- | -------- |
-| text      | Sets the Text Used. | String | **N/A**   | ❌      |
+| Arguments | Usage               | Type   |
+| --------- | ------------------- | ------ |
+| text      | Sets the Text Used. | String |
 
 # Starting
 To begin add this to the top of your script. 
